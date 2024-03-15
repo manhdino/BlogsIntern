@@ -19,74 +19,95 @@
 
 <body>
 
-
     <!-- START OF DASHBOARD  -->
     <section class="dashboard">
 
         <div class="container">
-
             <div class="dashboard__container">
                 <aside>
                     <ul>
                         <li>
-                            <a href="dashboard.html" class="active">
+                            <a href="#">
                                 <i class="uil uil-apps"></i>
                                 <h2>Dashboard</h2>
                             </a>
                         </li>
                         <li>
-                            <a href="./post/create/create-post.html">
+                            <a href="#">
                                 <i class="uil uil-plus-circle"></i>
-                                <h5>Create Post</h5>
+                                <h5>Add Post</h5>
                             </a>
                         </li>
                         <li>
-                            <a href="./post/views/views-post.html">
+                            <a href="../views/views-post.html" class="active">
                                 <i class="uil uil-edit"></i>
                                 <h5>Manage Posts</h5>
                             </a>
                         </li>
                         <li>
-                            <a href="./category/create/create-category.html">
+                            <a href="#">
                                 <i class="uil uil-plus-circle"></i>
                                 <h5>Add Category</h5>
                             </a>
                         </li>
                         <li>
-                            <a href="./category/views/views-category.html">
+                            <a href="#">
                                 <i class="uil uil-edit"></i>
                                 <h5>Manage Categories</h5>
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard.html">
+                            <a href="#">
                                 <i class="uil uil-plus-circle"></i>
                                 <h5>Add Language</h5>
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard.html">
+                            <a href="#">
                                 <i class="uil uil-edit"></i>
                                 <h5>Manage Languages</h5>
                             </a>
                         </li>
                         <li>
-                            <a href="./user/add-user.html">
+                            <a href="#">
                                 <i class="uil uil-user-plus"></i>
                                 <h5>Add User</h5>
                             </a>
                         </li>
                         <li>
-                            <a href="./user/list-users.html">
+                            <a href="#">
                                 <i class="uil uil-user"></i>
                                 <h5>Manage Users</h5>
                             </a>
                         </li>
                     </ul>
                 </aside>
-                <main>
-                    <h3>Biểu đồ thống kê của các bảng </h3>
-                </main>
+                <div class="form__container">
+                    <div class="form__section">
+                        <div class="form__section-container">
+                            <div class="form__title">
+                                <h2>Edit Post</h2>
+                            </div>
+                            <div class="alert__message error hide">
+                                <p>This is an error message</p>
+                            </div>
+                            <form action="">
+                                <input type="text" placeholder="Title..." />
+                                <select>
+                                    <option value="1">Travel</option>
+                                    <option value="2">Art</option>
+                                    <option value="3">Science & Technology</option>
+                                </select>
+                                <textarea rows="10" placeholder="Content..."></textarea>
+                                <div class="form__control-thumbnail">
+                                    <label for="thumnail">Edit thumbnail</label>
+                                    <input type="file" id="thumbnail">
+                                </div>
+                                <button type="submit" class="btn form__control-btn">Edit Post</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -94,6 +115,7 @@
     <!-- END OF DASHBOARD -->
 
 
+    <script src="./main.js"></script>
 </body>
 
 </html>

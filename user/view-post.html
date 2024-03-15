@@ -24,9 +24,9 @@
         <div class="container nav__container">
             <a href="../../home/index.html" class="nav__logo">Dinomanh's Blog</a>
             <ul class="nav__items">
-                <li><a href="./post/list-post.html">Blogs</a></li>
-                <li><a href="../home/services.html">Services</a></li>
-                <li><a href="../home/contact.html">Contact</a></li>
+                <li><a href="index.html">Blogs</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="index.html">Contact</a></li>
                 <!-- <li><a href="./home/sign-in.html">Sign In</a></li> -->
                 <li class="nav__profile">
                     <div class="avatar">
@@ -70,101 +70,65 @@
     </nav>
     <!-- END OF NAVBAR -->
 
+    <!-- START OF SINGLE POST  -->
+    <section class="singlepost">
+        <div class="container singlepost__container">
+            <div class="singlepost__title">
+                <h2>Thế giới động vật hoang dã</h2>
+            </div>
 
-    <!-- START OF DASHBOARD  -->
-    <section class="dashboard">
+            <div class="singlepost__thumbnail">
+                <img src="../../images/blog/blog1.jpg" alt="">
+            </div>
 
-        <div class="container">
-            <div class="dashboard__container">
-                <aside>
-                    <ul>
-                        <li>
-                            <a href="../dashboard.html">
-                                <i class="uil uil-apps"></i>
-                                <h2>Dashboard</h2>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="add-post.html" class="active">
-                                <i class="uil uil-plus-circle"></i>
-                                <h5>Add Post</h5>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./list-post.html">
-                                <i class="uil uil-edit"></i>
-                                <h5>Manage Posts</h5>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../category/add-category.html">
-                                <i class="uil uil-plus-circle"></i>
-                                <h5>Add Category</h5>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../category/list-category.html">
-                                <i class="uil uil-edit"></i>
-                                <h5>Manage Categories</h5>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="add-post.html">
-                                <i class="uil uil-plus-circle"></i>
-                                <h5>Add Language</h5>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="add-post.html">
-                                <i class="uil uil-edit"></i>
-                                <h5>Manage Languages</h5>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../user/add-user.html">
-                                <i class="uil uil-user-plus"></i>
-                                <h5>Add User</h5>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../user/list-users.html">
-                                <i class="uil uil-user"></i>
-                                <h5>Manage Users</h5>
-                            </a>
-                        </li>
-                    </ul>
-                </aside>
-                <div class="form__container">
-                    <div class="form__section">
-                        <div class="form__section-container">
-                            <div class="form__title">
-                                <h2>Add Post</h2>
-                            </div>
-                            <div class="alert__message error">
-                                <p>This is an error message</p>
-                            </div>
-                            <form action="">
-                                <input type="text" placeholder="Title..." />
-                                <select>
-                                    <option value="1">Travel</option>
-                                    <option value="2">Art</option>
-                                    <option value="3">Science & Technology</option>
-                                </select>
-                                <textarea rows="10" placeholder="Content..."></textarea>
-                                <div class="form__control-thumbnail">
-                                    <label for="thumnail">Add thumbnail</label>
-                                    <input type="file" id="thumbnail">
-                                </div>
-                                <button type="submit" class="btn form__control-btn">Add Post</button>
-                            </form>
+            <div class="post__info">
+                <div class="singlepost__content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum id a ex beatae dicta labore sequi
+                        sapiente, corporis, accusantium dolor itaque maiores explicabo fugiat magni illo omnis libero
+                        tempore non!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum id a ex beatae dicta labore sequi
+                        sapiente, corporis, accusantium dolor itaque maiores explicabo fugiat magni illo omnis libero
+                        tempore non!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum id a ex beatae dicta labore sequi
+                        sapiente, corporis, accusantium dolor itaque maiores explicabo fugiat magni illo omnis libero
+                        tempore non!
+                    </p>
+                    <div class="post__author">
+                        <div class="post__author-avatar">
+                            <img src="../../images/avatar/avatar10.jpg" alt="">
+                        </div>
+                        <div class="post__author-info">
+                            <h5>By: HoangDev</h5>
+                            <small>November 10, 2022 - 07:23</small>
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
     </section>
+    <!-- END OF SINGLE POST  -->
 
-    <!-- END OF DASHBOARD -->
+
+    <!-- START OF CATEGORY BUTTONS -->
+    <section class="category__btns">
+        <div class="container category__btns-container">
+            <a href="#" class="category__btn">Art</a>
+            <a href="#" class="category__btn">Wild Fire</a>
+            <a href="#" class="category__btn">Travel</a>
+            <a href="#" class="category__btn">Sciene & Technology</a>
+            <a href="#" class="category__btn">Food</a>
+            <a href="#" class="category__btn">Music</a>
+        </div>
+    </section>
+    <!-- END OF CATEGORYBUTTONS -->
+
 
 
     <!-- START OF FOOTER -->
@@ -227,9 +191,6 @@
     </footer>
     <!-- END OF FOOTER -->
 
-
-
-    <script src="./main.js"></script>
 </body>
 
 </html>
