@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Customer Style Css -->
+    <link rel="stylesheet" href="../../styles.css">
+
+    <!-- Customer IconsCout CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- Customer Font (MONTSERRAT)-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <title>Blogs</title>
+</head>
+
+<body>
+
+    <!-- START OF NAVBAR  -->
+    <nav>
+        <div class="container nav__container">
+            <a href="../../home/index.html" class="nav__logo">Dinomanh's Blog</a>
+            <ul class="nav__items">
+                <li><a href="./post/list-post.html">Blogs</a></li>
+                <li><a href="../home/services.html">Services</a></li>
+                <li><a href="../home/contact.html">Contact</a></li>
+                <!-- <li><a href="./home/sign-in.html">Sign In</a></li> -->
+                <li class="nav__profile">
+                    <div class="avatar">
+                        <img src="../../images/avatar/avatar14.jpg" alt="avatar-1" />
+                    </div>
+                    <div class="nav__sub-menu">
+                        <div class="sub-menu">
+                            <div class="user__info">
+                                <div class="avatar">
+                                    <img src="../../images//avatar/avatar14.jpg" alt="">
+                                </div>
+                                <h3>Dinomanh</h3>
+                            </div>
+                            <hr>
+                            <a href="#" class="sub-menu__link">
+                                <i class="uil uil-user-circle"></i>
+                                <p>Edit profile</p>
+
+                            </a>
+                            <a href="../admin/dashboard.html" class="sub-menu__link">
+                                <i class="uil uil-apps"></i>
+                                <p>Dashboard</p>
+
+                            </a>
+                            <a href="#" class="sub-menu__link">
+                                <i class="uil uil-question-circle"></i>
+                                <p>Help & Support</p>
+                            </a>
+                            <a href="#" class="sub-menu__link">
+                                <i class="uil uil-signout"></i>
+                                <p>Logout</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+            <button id="open__nav-btn"><i class="uil uil-bars"></i></button>
+            <button id="close__nav-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+
+
+    <!-- START OF DASHBOARD  -->
+    <section class="dashboard">
+
+        <div class="container">
+            <div class="dashboard__container">
+                <aside>
+                    <ul>
+                        <li>
+                            <a href="../dashboard.html">
+                                <i class="uil uil-apps"></i>
+                                <h2>Dashboard</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="add-post.html" class="active">
+                                <i class="uil uil-plus-circle"></i>
+                                <h5>Add Post</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list-post.html">
+                                <i class="uil uil-edit"></i>
+                                <h5>Manage Posts</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../category/add-category.html">
+                                <i class="uil uil-plus-circle"></i>
+                                <h5>Add Category</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../category/list-category.html">
+                                <i class="uil uil-edit"></i>
+                                <h5>Manage Categories</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="add-post.html">
+                                <i class="uil uil-plus-circle"></i>
+                                <h5>Add Language</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="add-post.html">
+                                <i class="uil uil-edit"></i>
+                                <h5>Manage Languages</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../user/add-user.html">
+                                <i class="uil uil-user-plus"></i>
+                                <h5>Add User</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../user/list-users.html">
+                                <i class="uil uil-user"></i>
+                                <h5>Manage Users</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+                <div class="form__container">
+                    <div class="form__section">
+                        <div class="form__section-container">
+                            <div class="form__title">
+                                <h2>Add Post</h2>
+                            </div>
+                            <div class="alert__message error">
+                                <p>This is an error message</p>
+                            </div>
+                            <form action="">
+                                <input type="text" placeholder="Title..." />
+                                <select>
+                                    <option value="1">Travel</option>
+                                    <option value="2">Art</option>
+                                    <option value="3">Science & Technology</option>
+                                </select>
+                                <textarea rows="10" placeholder="Content..."></textarea>
+                                <div class="form__control-thumbnail">
+                                    <label for="thumnail">Add thumbnail</label>
+                                    <input type="file" id="thumbnail">
+                                </div>
+                                <button type="submit" class="btn form__control-btn">Add Post</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END OF DASHBOARD -->
+
+
+    <!-- START OF FOOTER -->
+    <footer>
+        <div class="footer__socials">
+            <a href="index.html"><i class="uil uil-facebook"></i></a>
+            <a href="index.html"><i class="uil uil-instagram-alt"></i></a>
+            <a href="index.html"><i class="uil uil-linkedin"></i></a>
+            <a href="index.html"><i class="uil uil-twitter"></i></a>
+        </div>
+        <div class="container footer__container">
+            <article>
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="index.html">Art</a></li>
+                    <li><a href="index.html">Wild Fire</a></li>
+                    <li><a href="index.html">Travel</a></li>
+                    <li><a href="index.html">Science & Technology</a></li>
+                    <li><a href="index.html">Food</a></li>
+
+                </ul>
+            </article>
+            <article>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="index.html">Online Support</a></li>
+                    <li><a href="index.html">Call Numbers</a></li>
+                    <li><a href="index.html">Emails</a></li>
+                    <li><a href="index.html">Social Support</a></li>
+                    <li><a href="index.html">Location</a></li>
+
+                </ul>
+            </article>
+            <article>
+                <h4>Blog</h4>
+                <ul>
+                    <li><a href="index.html">Safety</a></li>
+                    <li><a href="index.html">Repair</a></li>
+                    <li><a href="index.html">Recent</a></li>
+                    <li><a href="index.html">Popular</a></li>
+                    <li><a href="index.html">Categories</a></li>
+
+                </ul>
+            </article>
+            <article>
+                <h4>Permalinks</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Services</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="footer__copyright">
+            <small>Copyright &copy; Dinomanh</small>
+        </div>
+    </footer>
+    <!-- END OF FOOTER -->
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
