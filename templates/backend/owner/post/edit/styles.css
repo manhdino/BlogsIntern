@@ -1,3 +1,16 @@
+/* #container {
+  width: 1000px;
+  margin: 20px auto;
+}
+
+
+
+
+
+.ck-editor__editable .ck-focused::active {
+  border: none;
+  outline: none;
+} */
 /* Google Fonts Import Link */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
@@ -15,6 +28,7 @@
   --blue-light-color: #e4e9f7;
   --grey-light-color: #f3f3f9;
   --text-color: #000;
+  --grey-light-color-2: #f3f3f9;
 }
 
 /* =============== START SIDEBAR ====================*/
@@ -163,7 +177,7 @@
 .sidebar__nav li .sidebar__nav-submenu a {
   color: var(--white-color);
   font-size: 15px;
-  padding: 5px 0;
+  padding: 2px 0;
   white-space: nowrap;
   opacity: 0.6;
   transition: all 0.3s ease;
@@ -171,15 +185,12 @@
 .sidebar__nav li .sidebar__nav-submenu a:hover {
   opacity: 1;
 }
-.sidebar__nav-submenu a.active {
-  opacity: 1;
-}
 .sidebar.close .sidebar__nav li .sidebar__nav-submenu {
   position: absolute;
   left: 100%;
   top: -10px;
   margin-top: 0;
-  padding: 10px 20px;
+  padding: 0px 20px 10px 20px;
   border-radius: 0 6px 6px 0;
   opacity: 0;
   display: block;
@@ -262,7 +273,7 @@
 
 .main {
   position: relative;
-  background: var(--white-color);
+  background: var(--grey-light-color-2);
   height: 100vh;
   left: 260px;
   width: calc(100% - 260px);
@@ -342,9 +353,9 @@
 }
 
 .main__header-action .badge {
-  position: absolute;
-  top: 16px;
-  right: 8.2%;
+  position: fixed;
+  top: 18px;
+  right: 7.5%;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -394,3 +405,103 @@
 }
 
 /* =============== END HEADER DASHBOARD ====================*/
+
+/* ========================= START OF FORM  ============== */
+.main__dashboard {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.hide {
+  display: none;
+}
+.form {
+  margin: 60px auto;
+  width: 50%;
+  margin-top: 40px;
+}
+
+.form__title {
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: var(--blue-color);
+}
+
+.alert__message {
+  padding: 0.8rem 1.4rem;
+  margin-bottom: 1rem;
+  border-radius: var(--card-border-radius-2);
+}
+
+.alert__message.error {
+  background: var(--color-red-light);
+  color: var(--color-red);
+}
+
+.alert__message.success {
+  background: var(--color-green-light);
+  color: var(--color-green);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+.form input,
+.form textarea,
+.form select {
+  padding: 0.8rem 1.4rem;
+  background: var(--white-color);
+  border-radius: 5px;
+  resize: none;
+  font-size: 0.9rem;
+  border: none;
+  outline: none;
+  margin-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.form label {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+select {
+  width: 40%;
+}
+
+.form__control-thumbnail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.btn {
+  background: var(--blue-color);
+  color: var(--white-color);
+  padding: 10px 12px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-top: 0.8rem;
+}
+
+.btn:hover {
+  background: #0000ff;
+  color: var(--white-color);
+}
+
+/* ========================= END OF FORM ============== */
+
+.ck-editor__editable[role="textbox"] {
+  min-height: 370px;
+}
+.ck-content .image {
+  max-width: 90%;
+  margin: 20px auto;
+}
